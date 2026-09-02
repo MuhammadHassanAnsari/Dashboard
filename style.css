@@ -17,7 +17,7 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    
+
 }
 
 .sidebar {
@@ -214,13 +214,13 @@ body {
     cursor: pointer;
 }
 
-.top-btn button:hover{
+.top-btn button:hover {
     transition: 0.3s;
     box-shadow: 0 3px 10px #0566d6;
-    
+
 }
 
-.cards{
+.cards {
     /* border: 2px solid red; */
     height: 180px;
     width: 100%;
@@ -230,8 +230,8 @@ body {
 }
 
 
-.card{
-     /* border: 2px solid red; */
+.card {
+    /* border: 2px solid red; */
     height: 120px;
     border-radius: 10px;
     width: 230px;
@@ -242,8 +242,8 @@ body {
 }
 
 
-.card-1{
-     /* border: 2px solid red; */
+.card-1 {
+    /* border: 2px solid red; */
     height: 120px;
     cursor: pointer;
     border-radius: 10px;
@@ -253,13 +253,13 @@ body {
     padding: 10px;
 }
 
-.card p{
+.card p {
     color: #667085;
     font-size: 11px;
 }
 
-.card-1 p{
-      color: #667085;
+.card-1 p {
+    color: #667085;
     font-size: 11px;
 }
 
@@ -270,39 +270,146 @@ body {
 }
 
 
-.card-1 h1{
-       color: #17202A;
+.card-1 h1 {
+    color: #17202A;
     font-size: 24px;
     margin-top: 10px;
 
 }
 
 
-.card h6{
+.card h6 {
     color: green;
     margin-top: 15px;
 }
 
 
-.card-1 h6{
+.card-1 h6 {
     color: green;
     margin-top: 15px;
 }
 
 
-.card:hover{
+.card:hover {
     box-shadow: 0 6px 18px rgba(16, 24, 40, 0.10);
     transition: 0.3s;
 }
 
 
-.card-1:hover{
+.card-1:hover {
     transition: 0.3s;
     box-shadow: 0 6px 18px rgba(16, 24, 40, 0.10);
 
 }
 
 
-.graph-section{
-    
+.graph-section {
+    border: 2px solid red;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.graph {
+      height: 280px;
+    width: 60%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #e4e7ec;
+
+
+}
+
+.graph-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image {
+    width: 100%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    height: 240px;
+    object-fit: fill;
+}
+
+.graph p {
+    color: #17202A;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.year {
+    width: 90px;
+    height: 27px;
+    padding: 0 8px;
+    border: 1px solid #E4E7EC;
+    border-radius: 5px;
+    background: #fff;
+    color: #475467;
+    font-size: 10px;
+    font-family: Inter, Arial, sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.image img{
+    height: 200px;
+}
+
+.leads {
+    border: 2px solid green;
+    height: 280px;
+    width: 30%;
+    background: #fff;
+
+    border-radius: 8px;
+    border: 2px solid #e4e7ec;
+}
+
+
+.lead-header h4{
+    font-size: 16px;
+    color: #17202A;
+    padding: 15px;
+
+}
+
+
+.lead-header p{
+    color: #667085;
+    font-size: 11px;
+    margin-left: 14px;
+}
+
+.line-1{
+    border: 2px solid red;
+    height: 30px;
+    width: 100%;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 220px;
+    margin-top: 10px;
+}
+
+.line-box{
+    border: 2px solid red;
+    height: 8px;
+    width: 50%;
+    padding: 10px;
 }
