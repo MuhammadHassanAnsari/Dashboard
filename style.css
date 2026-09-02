@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -12,18 +12,18 @@ body {
 }
 
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between  ;
+    
 }
 
 .sidebar {
     width: 240px;
-    height: 100vh;
-    border: 2px solid red;
+    height: 100%;
+    /* border: 2px solid red; */
     background: #17202A;
 }
 
@@ -43,7 +43,7 @@ body {
     letter-spacing: 2px;
     font-weight: 500;
     position: relative;
-    left: 45px;
+    left: 27px;
     top: -12px;
 }
 
@@ -82,21 +82,227 @@ body {
     color: #fff;
 }
 
-.main-content{
+.main-content {
     border: 2px solid purple;
     height: 100vh;
     width: 100%;
+
 }
 
 
-.top-bar{
-    border: 2px solid red;
-    height: 80px;
+.top-bar {
+    /* border: 2px solid red; */
+    height: 60px;
     background: #ffff;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
 }
 
 
-.name-section{
+.name-section {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 40%;
+}
+
+.name-section p {
+    color: #24313D;
+    font-weight: 700;
+
+}
+
+
+.name-section p:nth-child(2) {
+    font-size: 12px;
+    color: #24313D;
+    font-weight: 400;
+}
+
+.searchbar {
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#input {
+    padding: 10px 10px;
+    background: #F5F6F8;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
+
+
+#input:focus {
+    border: 2px solid #0566d6;
+}
+
+
+.icon {
+    width: 30px;
+    background-color: #24313D;
+    color: #fff;
+    font-size: 17px;
+    padding: 4px;
+    text-align: center;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.dashboard-content {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh;
+
+}
+
+.top-portion {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+
+.top-heading {
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 50%;
+
+}
+
+.top-portion h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(23, 32, 42);
+
+}
+
+
+.top-portion p {
+    font-size: 11px;
+    color: rgb(102, 112, 133);
+
+}
+
+.top-btn {
+    /* border: 2px solid red; */
+    height: 40px;
+    width: 40%;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+
+.top-btn button {
+    background: rgb(37, 99, 235);
+    width: 135px;
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    height: 35px;
+    cursor: pointer;
+}
+
+.top-btn button:hover{
+    transition: 0.3s;
+    box-shadow: 0 3px 10px #0566d6;
+    
+}
+
+.cards{
+    /* border: 2px solid red; */
+    height: 180px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.card{
+     /* border: 2px solid red; */
+    height: 120px;
+    border-radius: 10px;
+    width: 230px;
+    border: 2px solid #e4e7ec;
+    background: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.card-1{
+     /* border: 2px solid red; */
+    height: 120px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 230px;
+    border: 2px solid #e4e7ec;
+    background: #fff;
+    padding: 10px;
+}
+
+.card p{
+    color: #667085;
+    font-size: 11px;
+}
+
+.card-1 p{
+      color: #667085;
+    font-size: 11px;
+}
+
+.card h1 {
+    color: #17202A;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+.card-1 h1{
+       color: #17202A;
+    font-size: 24px;
+    margin-top: 10px;
+
+}
+
+
+.card h6{
+    color: green;
+    margin-top: 15px;
+}
+
+
+.card-1 h6{
+    color: green;
+    margin-top: 15px;
+}
+
+
+.card:hover{
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.10);
+    transition: 0.3s;
+}
+
+
+.card-1:hover{
+    transition: 0.3s;
+    box-shadow: 0 6px 18px rgba(16, 24, 40, 0.10);
+
+}
+
+
+.graph-section{
     
 }
