@@ -232,9 +232,9 @@ body {
 
 .card {
     /* border: 2px solid red; */
-    height: 120px;
+    height: 90px;
     border-radius: 10px;
-    width: 200px;
+    width: 150px;
     border: 2px solid #e4e7ec;
     background: #fff;
     padding: 10px;
@@ -244,7 +244,7 @@ body {
 
 .card-1 {
     /* border: 2px solid red; */
-    height: 120px;
+    height: 90px;
     cursor: pointer;
     border-radius: 10px;
     width: 200px;
