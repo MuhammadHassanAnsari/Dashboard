@@ -19,7 +19,9 @@ let customer = [
         status: "Pending",
         value: "$1,200		",
         joineddate: "May 21, 2024",
-        date: "Aug 29"
+        date: "Aug 29",
+        img: "../Image/ahmed.jpg"
+
     },
 
 
@@ -30,7 +32,9 @@ let customer = [
         status: "Active",
         value: "$3,500",
         joineddate: "Aug 10, 2023",
-        date: "Aug 28"
+        date: "Aug 28",
+        img: "../Image/sara.jpg"
+
     },
 
 
@@ -42,7 +46,9 @@ let customer = [
         status: "Inactive",
         value: "$800",
         joineddate: "Sep 1, 2026",
-        date: "Aug 28"
+        date: "Aug 28",
+        img: "../Image/usman.jpg"
+
     },
 
 
@@ -53,7 +59,9 @@ let customer = [
         status: "Active",
         value: "$800",
         joineddate: "Sep 1, 2026",
-        date: "Aug 28"
+        date: "Aug 28",
+        img: "../Image/rafay.jpg"
+
     },
 
 
@@ -61,8 +69,11 @@ let customer = [
 
 let inputbtn = document.querySelector(".input-recent");
 let body = document.querySelector("body");
-
-
+let addbtn = document.querySelector(".top-btn");
+let formPopup = document.querySelector(".form-Popup");
+let addcusbtn = document.getElementById("add-customer");
+let closecusbtn = document.getElementById("close-customer");
+let 
 
 
 let popupdiv = document.createElement("div");
@@ -111,10 +122,15 @@ inputbtn.addEventListener("input", function () {
 
         inputbtn.value = " ";
     }
-
-
-
-    console.log(result)
-
 })
 
+
+addbtn.addEventListener("click", function(){
+    formPopup.style.display = "flex";
+})
+
+
+closecusbtn.addEventListener("click", function(){
+    formPopup.style.display = "none";
+    
+})
