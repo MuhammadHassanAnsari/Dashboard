@@ -319,7 +319,7 @@ body {
 
 .recent-customer {
     /* border: 2px solid red; */
-    height: 450px;
+    height: auto;
     width: 97%;
     border-radius: 7px;
     margin: 16px;
@@ -370,6 +370,11 @@ body {
     border-bottom: 1px solid #F2F4F7;
 }
 
+.cross{
+    position: relative;
+    left: -13px;
+    cursor: pointer;
+} 
 
 
 
@@ -482,6 +487,8 @@ body {
     width: 420px;
     padding: 30px;
     background-color: white;
+     max-height: 85vh;
+    overflow-y: auto;
     border-radius: 16px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
 
