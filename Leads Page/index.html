@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Leads</title>
 </head>
 
@@ -72,7 +73,7 @@
                         <p>Overview of your business performance</p>
                     </div>
                     <div class="top-btn">
-                        <button>+ Add Customer</button>
+                        <button>+ &nbsp; Add Lead</button>
                     </div>
                 </div>
 
@@ -81,58 +82,56 @@
 
                     <div class="lead-card">
                         <div class="lead-icon">
-                            ♙
+                            <i class="fa-regular fa-address-book"></i>
                         </div>
 
                         <div class="lead-info">
-                            <p>Total Customers</p>
+                            <p>New</p>
                             <h2>42</h2>
                         </div>
                     </div>
 
                     <div class="lead-card">
                         <div class="lead-icon">
-                            ✓
+                            <i class="fa-regular fa-address-book"></i>
                         </div>
 
                         <div class="lead-info">
-                            <p>Active Customer</p>
+                            <p>Contacted</p>
                             <h2>28</h2>
-
                         </div>
                     </div>
 
                     <div class="lead-card">
                         <div class="lead-icon">
-                            ○
+                            <i class="fa-solid fa-user-group"></i>
                         </div>
 
                         <div class="lead-info">
-                            <p>Inactive Customer</p>
+                            <p>Qualified</p>
                             <h2>16</h2>
                         </div>
                     </div>
 
-
                     <div class="lead-card">
                         <div class="lead-icon">
-                            ♕
+                            <i class="fa-regular fa-handshake"></i>
                         </div>
 
                         <div class="lead-info">
-                            <p>Won</p>
-                            <h2>6</h2>
+                            <p>Proposal</p>
+                            <h2>9</h2>
                         </div>
                     </div>
 
                     <div class="lead-card">
                         <div class="lead-icon">
-                            $
+                            <i class="fa-solid fa-briefcase"></i>
                         </div>
 
                         <div class="lead-info">
-                            <p>Total Revenue</p>
-                            <h2>$24,550</h2>
+                            <p>Won</p>
+                            <h2>5</h2>
                         </div>
                     </div>
 
@@ -178,6 +177,24 @@
                     <section class="recent-customer">
                         <div class="recent-header">
                             <input class="input-recent" type="search" placeholder="  ⌕ Search Leads....">
+                            <div class="option">
+                                <select name="" id="status-option">
+                                    <option value="All">All Status</option>
+                                    <option value="Active">Active</option>
+                                    <option value="Inactive">Inactive</option>
+                                    <option value="Pending">Pending</option>
+                                </select>
+
+
+                                <select name="" id="source-option">
+                                    <option value="All">All Source</option>
+                                    <option value="Website">Website</option>
+                                    <option value="Referral">Referral</option>
+
+                                </select>
+                            </div>
+
+
                         </div>
 
 
@@ -186,21 +203,21 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>CUSTOMER</th>
+                                            <th>LEADS NAME</th>
                                             <th>COMPANY</th>
                                             <th>STATUS</th>
-                                            <th>EMAIL</th>
+                                            <th>Source</th>
                                             <th>VALUE</th>
-                                            <th>JOINED DATE</th>
+                                            <th>CREATED DATE</th>
                                             <th>DATE</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <tr>
-                                            <td>Ali Khan</td>
+                                            <td><span class="cross">❌</span>Ali Khan</td>
                                             <td>TechCorp</td>
-                                            <td>alikhan23@gmail.com</td>
+                                            <td>Website</td>
                                             <td><span class="status-active">Active</span></td>
                                             <td>$2,400</td>
                                             <td>Aug 30, 2024</td>
@@ -208,9 +225,9 @@
                                         </tr>
 
                                         <tr>
-                                            <td>Ahmed Raza</td>
+                                            <td><span class="cross">❌</span>Ahmed Raza</td>
                                             <td>Nova Ltd</td>
-                                            <td>razaahmed@gmail.com</td>
+                                            <td>Referral</td>
                                             <td><span class="status-pending">Pending</span></td>
                                             <td>$1,200</td>
                                             <td>May 21, 2024</td>
@@ -219,9 +236,9 @@
 
 
                                         <tr>
-                                            <td>Sara Ahmed</td>
+                                            <td><span class="cross">❌</span>Sara Ahmed</td>
                                             <td>DesignCo</td>
-                                            <td>saraahemd11@gmail.com</td>
+                                            <td>Referral</td>
                                             <td><span class="status-active">Active</span></td>
                                             <td>$3,500</td>
                                             <td>Aug 10, 2023</td>
@@ -230,9 +247,9 @@
 
 
                                         <tr>
-                                            <td>Usman Khan</td>
+                                            <td><span class="cross">❌</span>Usman Khan</td>
                                             <td>SoftTech</td>
-                                            <td>khanusmanmuhammad@gmail.com</td>
+                                            <td>Website</td>
                                             <td><span class="status-inactive">Inactive</span></td>
                                             <td>$800</td>
                                             <td>Sep 1, 2026</td>
@@ -241,9 +258,9 @@
 
 
                                         <tr>
-                                            <td>Rafay Khan</td>
+                                            <td><span class="cross">❌</span>Rafay Khan</td>
                                             <td>PixelWorld</td>
-                                            <td>rafaykhan233@gmail.com</td>
+                                            <td>Referral</td>
                                             <td><span class="status-active">Active</span></td>
                                             <td>$800</td>
                                             <td>Sep 1, 2026</td>
@@ -265,4 +282,5 @@
     </div>
 </body>
 <script src="script.js"></script>
+
 </html>

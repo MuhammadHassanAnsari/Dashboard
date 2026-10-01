@@ -206,7 +206,7 @@ body {
 
 .top-btn button {
     background: rgb(37, 99, 235);
-    width: 135px;
+    width: 110px;
     border-radius: 7px;
     color: #fff;
     border: none;
@@ -303,7 +303,7 @@ body {
 
 .customer-data{
     /* border: 2px solid red; */
-    height: 500px;
+    height: auto;
     width: 100%;
 }
 
@@ -329,6 +329,22 @@ body {
     padding: 12px;
 }
 
+.option{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 100%;
+    gap: 40px;
+    
+}
+
+#status-option, #source-option{
+    margin-top: 38px;
+    padding: 8px;
+    width: 15%;
+    border: 1px solid #AEB7C2;
+    height: 32px;
+}
 
 .body-header {
     color: #475467;
@@ -549,3 +565,10 @@ body {
 #close-customer:hover {
     background-color: #dfe4e8;
 }
+
+
+.cross{
+    position: relative;
+    left: -13px;
+    cursor: pointer;
+} 
