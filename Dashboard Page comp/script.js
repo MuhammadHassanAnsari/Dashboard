@@ -12,7 +12,10 @@ let valueinput = document.getElementById("customer-value");
 let joineddateinput = document.getElementById("customer-joined");
 let dateinput = document.getElementById("customer-date");
 let tablebody = document.querySelector("tbody");
-
+let viewbtn = document.querySelector(".viewall")
+let Popupdiv = document.querySelector(".all-customer-popup")
+let closePopupdiv = document.querySelector(".close-all-customer")
+let crosstext = document.querySelector(".cross");
 
 
 let customer = [
@@ -187,4 +190,26 @@ addcusbtn.addEventListener("click", () => {
     valueinput.value = "";
     dateinput.value = "";
 
+})
+
+
+viewbtn.addEventListener("click", ()=>{
+    Popupdiv.style.display = "block";
+})
+
+
+closePopupdiv.addEventListener("click", ()=>{
+    Popupdiv.style.display = "none";
+    
+})
+
+
+
+tablebody.addEventListener("click", (e)=>{
+    let crossremove =  e.target;
+
+    if(crossremove.classList.contains("cross")){
+        let row = crossremove.closest("tr");
+        row.remove()
+    }
 })
