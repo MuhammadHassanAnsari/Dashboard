@@ -10,6 +10,9 @@ let valueinput = document.getElementById("customer-value");
 let joineddateinput = document.getElementById("customer-joined");
 let dateinput = document.getElementById("customer-date");
 let tablebody = document.querySelector("tbody");
+let option = document.querySelector("#status-option");
+let rows = document.querySelectorAll("tbody tr")
+
 
 
 
@@ -164,5 +167,30 @@ addcusbtn.addEventListener("click", () => {
     statusinput.value = "";
     valueinput.value = "";
     dateinput.value = "";
+
+})
+
+
+
+option.addEventListener("change", () => {
+    let optionvalue = option.value;
+
+    rows.forEach((row) => {
+        let selectedrow = row.querySelector("td:nth-child(4)");
+        let selectedrowvalue = selectedrow.innerText.trim();
+
+        console.log(selectedrowvalue);
+
+        if(optionvalue === "All"){
+            row.style.display = "";
+
+        }
+        else if(optionvalue === selectedrowvalue){
+            row.style.display = "";
+        } else{
+            row.style.display = "none";
+
+        }
+    })
 
 })

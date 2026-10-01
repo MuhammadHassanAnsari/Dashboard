@@ -248,7 +248,7 @@ option.addEventListener("change", ()=>{
       let selectedrow =  row.querySelector("td:nth-child(4)")
       let valueofselectedrow = selectedrow.innerText.trim();
 
-      console.log(valueofselectedrow)
+    //   console.log(valueofselectedrow)
 
       if(valueofselectedrow === "All") {
         row.style.display = "";
