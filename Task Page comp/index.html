@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">ClientFlow</div>
+            <p class="logo-icon">CRM</p>
+
+            <div class="sidebar-items">
+                <div class="menu-section">
+                    <p class="menu-heading">MAIN</p>
+                    <ul>
+                        <li class="active"><a href="../Dashboard Page/index.html"></a>▣ Dashboard</li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <p class="menu-heading">MANAGEMENT</p>
+                    <ul>
+                        <li><a href="../Customer Page/index.html"></a>♙ Customers</li>
+                        <li><a href="../Leads Page/index.html"></a>♧ Leads</li>
+
+                        <li><a href="../Invoice Page/index.html"></a>▤ Invoices</li>
+                    </ul>
+                </div>
+
+
+                <div class="menu-section">
+                    <p class="menu-heading">ANALYTICS</p>
+                    <ul>
+                        <li><a href="../Report Page/index.html"></a>▥ Reports</li>
+                    </ul>
+                </div>
+                <div class="menu-section">
+                    <p class="menu-heading">SYSTEM</p>
+                    <ul>
+                        <li>⚙ Settings</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="name-section">
+                    <p>Dashboard</p>
+                    <p>Good Morning, Hassan</p>
+                </div>
+                <div class="searchbar">
+                    <input id="input" type="search" placeholder="⌕ Search...">
+                    <span>♧</span>
+                    <p class="icon">H</p>
+                </div>
+
+            </div>
+            <div class="dashboard-content">
+                <div class="top-portion">
+                    <div class="top-heading">
+                        <h3>Dashboard</h3>
+                        <p>Overview of your business performance</p>
+                    </div>
+                    <div class="top-btn">
+                        <button>+ Add Task</button>
+                    </div>
+                </div>
+
+
+
+                <!-- cards -->
+                <section class="cards">
+                    <div class="card">
+                        <p>Total Customer</p>
+                        <h1>1,243</h1>
+                        <h6>↑ 8.2%
+                        </h6>
+
+                    </div>
+                    <div class="card">
+                        <p>Active Customer</p>
+                        <h1>989</h1>
+                        <h6>↑ 6.2%
+                        </h6>
+                    </div>
+                    <div class="card">
+                        <p>Inactive Customer</p>
+                        <h1>246</h1>
+                        <h6>↓ 2.4%
+                        </h6>
+                    </div>
+                    <div class="card-1">
+                        <p>Total Revenue</p>
+                        <h1>$24,550</h1>
+                        <h6>↓ 12.5%
+                        </h6>
+                    </div>
+                </section>
+
+                <div class="form-Popup">
+                    <div class="form-div">
+
+                        <form>
+                            <label for="customer-name">Task</label>
+                            <input type="text" id="customer-name" placeholder="Enter Task">
+
+                            <label for="customer-company">Assigner</label>
+                            <input type="text" id="customer-company" placeholder="Enter Assigner name">
+
+                            <label for="customer-email">Piority</label>
+                            <input type="text" id="customer-email" placeholder="Enter Piority">
+
+                            <label for="customer-status">Status</label>
+                            <input type="text" id="customer-status" placeholder="Enter status">
+
+                            <label for="customer-joined">Due Date</label>
+                            <input type="text" id="customer-joined" placeholder="Enter Due Date">
+
+                    
+
+                            <div class="form-buttons">
+                                <button type="button" id="add-customer">Add Customer</button>
+                                <button type="button" id="close-customer">Close</button>
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="customer-data">
+                    <section class="recent-customer">
+                        <div class="recent-header">
+                            <input class="input-recent" type="search" placeholder="  ⌕ Search Customers....">
+
+                            <div class="option">
+                                <select name="" id="status-option">
+                                    <option value="All">All Piority</option>
+                                    <option value="High">High</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="Low">Low</option>
+                                </select>
+
+
+                                <select name="" id="company-option">
+                                    <option value="All">All Status</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="In Progress">In Progress</option>
+                                    <option value="Complete">Complete</option>
+                                
+                                </select>
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="recent-body">
+                            <div class="body-header">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>TASK</th>
+                                            <th>ASSIGNER</th>
+                                            <th>PIORITY</th>
+                                            <th>STATUS</th>
+                                            <th>DUE DATE</th>
+
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td><span class="cross">❌</span> Follow up with TechCorp</td>
+                                            <td>Hassan</td>
+                                            <td class="piority-high">High</td>
+                                            <td><span class="piority-medium">Pending</span></td>
+                                            <td>Aug 30, 2024</td>
+
+                                        </tr>
+
+                                        <tr>
+                                            <td><span class="cross">❌</span>Prepare Proposal for DesignCo</td>
+                                            <td>Sara</td>
+                                            <td class="piority-medium">Medium</td>
+                                            <td><span class="status-active">In Progress</span></td>
+                                            <td>Aug 31, 2024</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><span class="cross">❌</span>Update contract with SoftTech</td>
+                                            <td>Usman</td>
+                                            <td class="piority-high">High</td>
+                                            <td><span class="piority-medium ">Pending</span></td>
+                                            <td>Oct 3, 2024</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><span class="cross">❌</span>Send Invoice to Nova Ltd</td>
+                                            <td>Hassan</td>
+                                            <td class="piority-low">Low</td>
+                                            <td><span class="piority-low">Complete</span></td>
+                                            <td>Aug 2, 2024</td>
+                                        </tr>
+
+
+                                        <tr>
+                                          <td><span class="cross">❌</span>Client meeting with CreativeHub</td>
+                                            <td>Sara</td>
+                                            <td class="piority-medium">Medium</td>
+                                            <td><span class="status-active">In Progress</span></td>
+                                            <td>Sep 2, 2024</td>
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+
+                            </div>
+                    </section>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

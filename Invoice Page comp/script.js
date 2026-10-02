@@ -11,6 +11,8 @@ let joineddateinput = document.getElementById("customer-joined");
 let dateinput = document.getElementById("customer-date");
 let tablebody = document.querySelector("tbody");
 let option = document.querySelector("#status-option");
+let option2 = document.querySelector("#company-option");
+
 let rows = document.querySelectorAll("tbody tr")
 
 
@@ -194,3 +196,23 @@ option.addEventListener("change", () => {
     })
 
 })
+
+
+option2.addEventListener("change", () => {
+    let optionvalue2 = option2.value;
+
+    rows.forEach((row) => {
+        let selectedrow2 = row.querySelector("td:nth-child(2)");
+        let selectedrowvalue = selectedrow2.innerText.trim();
+
+        if (optionvalue2 === "All") {
+            row.style.display = "";
+        }
+        else if (optionvalue2 === selectedrowvalue) {
+            row.style.display = "";
+        }
+        else {
+            row.style.display = "none";
+        }
+    });
+});
