@@ -83,6 +83,7 @@ let dateinput = document.getElementById("customer-date");
 let crosstext = document.querySelector(".cross");
 let tablebody = document.querySelector("tbody");
 let option = document.querySelector("#status-option");
+let option2 = document.querySelector("#company-option");
 let rows = document.querySelectorAll("tbody tr");
 
 
@@ -240,27 +241,42 @@ closecusbtn.addEventListener("click", function () {
 });
 
 
-
-option.addEventListener("change", ()=>{
+option.addEventListener("change", () => {
     let optionvalue = option.value;
 
-    rows.forEach((row)=>{
-      let selectedrow =  row.querySelector("td:nth-child(4)")
-      let valueofselectedrow = selectedrow.innerText.trim();
+    rows.forEach((row) => {
+        let selectedrow = row.querySelector("td:nth-child(4)");
+        let valueofselectedrow = selectedrow.innerText.trim();
 
-    //   console.log(valueofselectedrow)
+        if (optionvalue === "All") {
+            row.style.display = "";
+        }
+        else if (optionvalue === valueofselectedrow) {
+            row.style.display = "";
+        }
+        else {
+            row.style.display = "none";
+        }
+    });
+});
 
-      if(valueofselectedrow === "All") {
-        row.style.display = "";
 
-      } 
 
-      else if(optionvalue === valueofselectedrow){
-        row.style.display = "";
-      } else{
-        row.style.display = "none";
+option2.addEventListener("change", () => {
+    let optionvalue2 = option2.value;
 
-      }
-    })
+    rows.forEach((row) => {
+        let selectedrow2 = row.querySelector("td:nth-child(2)");
+        let selectedrowvalue = selectedrow2.innerText.trim();
 
-})
+        if (optionvalue2 === "All") {
+            row.style.display = "";
+        }
+        else if (optionvalue2 === selectedrowvalue) {
+            row.style.display = "";
+        }
+        else {
+            row.style.display = "none";
+        }
+    });
+});
